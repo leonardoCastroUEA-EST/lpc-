@@ -11,8 +11,11 @@ angle = 30
 
 
 # function to plot a Y
-def y(sz, level):
+
+def plot_a_Y(sz, level):
+
     if level > 0:
+
         colormode(255)
 
         # splitting the rgb range for green
@@ -28,7 +31,7 @@ def y(sz, level):
 
         # recursive call for
         # the right subtree
-        y(0.8 * sz, level - 1)
+        plot_a_Y(0.8 * sz, level - 1)
 
         pencolor(0, 255 // level, 0)
 
@@ -36,7 +39,7 @@ def y(sz, level):
 
         # recursive call for
         # the left subtree
-        y(0.8 * sz, level - 1)
+        plot_a_Y(0.8 * sz, level - 1)
 
         pencolor(0, 255 // level, 0)
 
@@ -45,4 +48,4 @@ def y(sz, level):
 
 
 # tree of size 80 and level 7
-y(80, 7)
+plot_a_Y(80, 7)
