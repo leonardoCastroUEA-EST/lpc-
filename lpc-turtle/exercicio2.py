@@ -12,7 +12,7 @@ angle = 30
 
 # function to plot a Y
 
-def plot_a_Y(sz, level):
+def plot_a_y(size, level):
 
     if level > 0:
 
@@ -25,13 +25,13 @@ def plot_a_Y(sz, level):
         pencolor(0, 255 // level, 0)
 
         # drawing the base
-        fd(sz)
+        fd(size)
 
         rt(angle)
 
         # recursive call for
         # the right subtree
-        plot_a_Y(0.8 * sz, level - 1)
+        plot_a_y(0.8 * size, level - 1)
 
         pencolor(0, 255 // level, 0)
 
@@ -39,13 +39,13 @@ def plot_a_Y(sz, level):
 
         # recursive call for
         # the left subtree
-        plot_a_Y(0.8 * sz, level - 1)
+        plot_a_y(0.8 * size, level - 1)
 
         pencolor(0, 255 // level, 0)
 
         rt(angle)
-        fd(-sz)
+        fd(-size)
 
 
 # tree of size 80 and level 7
-plot_a_Y(80, 7)
+plot_a_y(80, 7)

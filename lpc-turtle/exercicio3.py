@@ -7,7 +7,7 @@ wn = turtle.Screen()
 tess = turtle.Turtle()
 
 
-def plot_a_Triangle(x, y):
+def plot_a_triangle(x, y):
 
     # it is used to draw out the pen
     tess.penup()
@@ -35,7 +35,7 @@ def plot_a_Triangle(x, y):
 
 # special built in function to send current
 # position of cursor to triangle
-turtle.onscreenclick(plot_a_Triangle, 1)
+turtle.onscreenclick(plot_a_triangle, 1)
 
 turtle.listen()
 
