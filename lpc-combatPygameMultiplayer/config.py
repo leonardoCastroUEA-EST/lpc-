@@ -15,7 +15,7 @@ class Config:
     purple = (242, 51, 242)
 
     # config arena
-    point_victory = 2
+    point_victory = 10
     recharge_time = 0
     animation_time = 2.5
 
